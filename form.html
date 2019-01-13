@@ -1,56 +1,67 @@
 <html>
-<head>
-<title>My Form Page</title>
-</head>
-<body>
-<form action="sample.php" method="get">
-<table>
-<tr>
-<td>Name</td>
-<td><input type="text" name="username"/></td>
-</tr>
-<tr>
-<td>Password</td>
-<td><input type="password" name="password"/></td>
-</tr>
-<tr>
-<td>Gender</td>
-<td><input type="radio" name="gender"/>M
-    <input type="radio" name="gender"/>F</td>
-</tr>
 
-<tr>
-<td>Course</td>
-<td><input type="checkbox" name="php"/>PHP
-    <input type="checkbox" name="mysql"/>MySQL
-    <input type="checkbox" name="javascript"/>JAVASCRIPT
-    <input type="checkbox" name="c++"/>C++
-    <input type="checkbox" name="python"/>PYTHON
-</td>
-</tr>
+    <head>
+        <title>
+            Form
+        </title>
 
-<tr>
-<td>City</td>
-<td><select>
-<option>KARACHI</option>
-<option>ISLAMABAD</option>
-<option>LAHORE</option>
-<option>PESHAWAR</option>
-<option>HYDERABAD</option>
-<option>MULTAN</option>
-</select>
-</td>
-</tr>
+    </head>
 
-<tr>
-<td colspan="2"><input type="submit" value="Register"/>
-                 <input type="reset"/>
-</td>
-</tr>
+    <body>
+        <h1><b>Travel Reservation Form</b></h1>
+        <h2><b>*denotes mandatory</b></h2>
+        <form action="somefile.pp" method="POST">            
+            <table>
+                <tr>
+                    <td>Full Name*:</td>
+                    <td><input type="text" name="FirstName" placeholder="FirstName LastName" required></td>
+                </tr>
+                <tr>
+                    <td>Email Address*:</td>
+                    <td><input type="text" name="Emailaddress" placeholder="EmailAddress" required></td>
+                </tr>
+                <tr>
+                    <td>Select Your Package*:</td>
+                    <td><select required>
+                        <option>Karachi</option>
+                        <option>Islamabad</option>
+                        <option>Lahore</option>
+                        <option>Hyderabad</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Arrival Date*:</td>
+                    <td><input type="date" required></td>
+                </tr>
+                <tr>
+                        <td>No. Of Persons*:</td>
+                        <td><input type="text" name="number of persons" placeholder="UNKNOWN_TYPE" required></td>
+                </tr>
+                <tr>
+                        <td>What would you want to avail*:</td>
+                        <td><label><input type="checkbox" name="Boarding">Boarding</td></label>
+                        <td><label><input type="checkbox" name="Fooding" >Fooding</td></label>
+                        <td><label><input type="checkbox" name="Sight seeing" >Sight seeing</td></label>
+                </tr>
+                <tr>
+                        <td>Discount Coupon Code:</td>
+                        <td><input type="text" name="dicount Code" placeholder="UNKNOWN_TYPE"></td>
+                </tr>
+                <tr>
+                        <td>Terms And Conditions*:</td>
+                        <td><input type="radio" name="agree" required>I Agree</td>
+                        <td><input type="radio" name="agree" required>I Disagree</td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Complete reservation"></td>
+                </tr>
 
-</table>
-</form>
-</body>
-
-
+            </table>
+        </form>
+    </body>
 </html>
+
+
+
+
+
